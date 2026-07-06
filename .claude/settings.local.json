@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -m venv \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\backend\\\\.venv\")",
+      "PowerShell(& \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\backend\\\\.venv\\\\Scripts\\\\pip.exe\" install -r \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\backend\\\\requirements.txt\" --quiet)",
+      "PowerShell(& \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\backend\\\\.venv\\\\Scripts\\\\python.exe\" \"E:\\\\Temp\\\\claude\\\\e--Programering-APPs-06-07-MelonPop\\\\fb70b912-73ae-4bad-878e-a3d65dea3b6a\\\\scratchpad\\\\test_backend.py\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npm install --no-audit --no-fund 2>$null; Write-Output \"NPM_INSTALL_EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npx expo install react-native-reanimated react-native-gesture-handler @shopify/react-native-skia react-native-screens react-native-safe-area-context @react-native-async-storage/async-storage expo-crypto expo-haptics expo-audio react-native-svg expo-linear-gradient; Write-Output \"EXPO_INSTALL_EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npm install --no-audit --no-fund matter-js @types/matter-js react-native-gifted-charts @react-navigation/native @react-navigation/native-stack; Write-Output \"EXIT=$LASTEXITCODE\")",
+      "PowerShell(python \"E:\\\\Temp\\\\claude\\\\e--Programering-APPs-06-07-MelonPop\\\\fb70b912-73ae-4bad-878e-a3d65dea3b6a\\\\scratchpad\\\\gen_pop.py\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npx expo export --platform android --output-dir \"E:\\\\Temp\\\\claude\\\\e--Programering-APPs-06-07-MelonPop\\\\fb70b912-73ae-4bad-878e-a3d65dea3b6a\\\\scratchpad\\\\export-test\"; Write-Output \"EXPORT_EXIT=$LASTEXITCODE\")",
+      "PowerShell(Remove-Item \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\backend\\\\melonpop.db\" -Force -Confirm:$false; Get-ChildItem \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\" -Recurse -Depth 1 -Force | Where-Object { $_.Name -notmatch 'node_modules|\\\\.venv' } | Select-Object FullName)",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npx expo install --check; Write-Output \"CHECK_EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npx tsc --noEmit; Write-Output \"TSC_EXIT=$LASTEXITCODE\"; npx expo export --platform android --clear --output-dir \"E:\\\\Temp\\\\claude\\\\e--Programering-APPs-06-07-MelonPop\\\\fb70b912-73ae-4bad-878e-a3d65dea3b6a\\\\scratchpad\\\\export-test2\"; Write-Output \"EXPORT_EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npx tsc --noEmit; Write-Output \"TSC_EXIT=$LASTEXITCODE\")",
+      "PowerShell(Set-Location \"e:\\\\Programering\\\\APPs\\\\06.07\\\\MelonPop\\\\frontend\"; npx expo export --platform android --output-dir \"E:\\\\Temp\\\\claude\\\\e--Programering-APPs-06-07-MelonPop\\\\fb70b912-73ae-4bad-878e-a3d65dea3b6a\\\\scratchpad\\\\export-test3\" 2>$null | Select-Object -Last 5; Write-Output \"EXPORT_EXIT=$LASTEXITCODE\")"
+    ]
+  }
+}
